@@ -34,5 +34,3 @@ elif opcionUsuario == 3:
     
 else:
     print("\nSALIR")
-
-
