@@ -1,0 +1,14 @@
+[
+    {
+        "comprador": {
+            "nombre": "cornelio",
+            "email": "miguel"
+        },
+        "evento": {
+            "nombre": "Parrillada Verano",
+            "fecha": "2024-07-15",
+            "lugar": "Parque Central"
+        },
+        "cantidad_tickets": 1
+    }
+]
