@@ -1,14 +1,41 @@
 [
     {
         "comprador": {
-            "nombre": "cornelio",
-            "email": "miguel"
+            "nombre": "miguel",
+            "email": "cornelio"
         },
         "evento": {
             "nombre": "Parrillada Verano",
             "fecha": "2024-07-15",
             "lugar": "Parque Central"
         },
-        "cantidad_tickets": 1
+        "cantidad_tickets": 5,
+        "precio_total": 500
+    },
+    {
+        "comprador": {
+            "nombre": "leonela",
+            "email": "cornelio"
+        },
+        "evento": {
+            "nombre": "Fiesta VIP",
+            "fecha": "2024-08-20",
+            "lugar": "Hotel de Lujo"
+        },
+        "cantidad_tickets": 20,
+        "precio_total": 1800.0
+    },
+    {
+        "comprador": {
+            "nombre": "jose",
+            "email": "cornelio"
+        },
+        "evento": {
+            "nombre": "Gran Barbacoa",
+            "fecha": "2024-09-10",
+            "lugar": "Estadio Municipal"
+        },
+        "cantidad_tickets": 50,
+        "precio_total": 4500.0
     }
 ]
