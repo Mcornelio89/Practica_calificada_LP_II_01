@@ -52,10 +52,16 @@ class Venta:
         self.evento = evento
         self.cantidad_tickets = cantidad_tickets
 
+    def calcular_precio_total(self):
+        precio_base = 100  # Precio base por ticket
+        descuento = self.calcular_descuento()  # Calcular descuento por volumen de compra
+        precio_total = self.cantidad_tickets * precio_base - descuento  # Calcular precio total con descuento
+        return precio_total
+    
     def calcular_descuento(self):
         precio_base = 100  # Precio base por ticket
         descuento = 0
-
+        
         # Implementación para calcular descuentos por volumen de compra
         if self.cantidad_tickets >= 10:
             descuento = 0.1 * precio_base * self.cantidad_tickets  # Descuento del 10% para más de 10 tickets
@@ -100,7 +106,8 @@ class GestorVentas:
                 venta_dict = {
                     'comprador': venta.comprador.to_dict(),
                     'evento': venta.evento.__dict__,
-                    'cantidad_tickets': venta.cantidad_tickets
+                    'cantidad_tickets': venta.cantidad_tickets,
+                    'precio_total': venta.calcular_precio_total()
                 }
                 ventas_dict.append(venta_dict)
             json.dump(ventas_dict, file, indent=4)
