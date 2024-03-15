@@ -56,7 +56,7 @@ class Venta:
         precio_base = 100  # Precio base por ticket
         descuento = 0
 
-        # Implementa aquí la lógica para calcular descuentos por volumen de compra
+        # Implementación para calcular descuentos por volumen de compra
         if self.cantidad_tickets >= 10:
             descuento = 0.1 * precio_base * self.cantidad_tickets  # Descuento del 10% para más de 10 tickets
 
@@ -171,7 +171,7 @@ def main():
     while True:
         opcion = menu_principal()
         if opcion == "1":
-            comprar_ticket(gestor_ventas, eventos)  # Asegúrate de pasar los argumentos requeridos
+            comprar_ticket(gestor_ventas, eventos)
         elif opcion == "2":
             gestor_ventas.guardar_ventas_json("ventas.json")
             print("Gracias por usar nuestro sistema. ¡Hasta luego!")
